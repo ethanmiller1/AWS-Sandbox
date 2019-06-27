@@ -16,6 +16,11 @@ var port = normalizePort(process.env.PORT || '8081');
 app.set('port', port);
 
 /**
+ * Print the port to console.
+ */
+console.log(`Server started on port ${port}...`);
+
+/**
  * Create HTTP server.
  */
 

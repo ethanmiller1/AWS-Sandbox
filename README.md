@@ -1,12 +1,31 @@
 # AWS Sandbox
 
-A simple Node.js wep app to explore Amazon Web Services.
+A simple Node.js web app to explore Amazon Web Services.
 
 Based on Academind's tutorial video [Getting Started with AWS | Amazon Web Services BASICS](https://academind.com/learn/aws/the-basics/getting-started-with-aws/). Check out his Github repository [here](https://github.com/academind/aws-first-node-app).
 
 ## Demo
 
 Access a demonstration of the working application at this custom [AWS link](http://awssandbox-env.jfv7jgtbmz.us-east-2.elasticbeanstalk.com/).
+
+## Get started with AWS Sandbox App locally
+
+Ensure you have Node.js installed, then install the required dependencies enumerated in the package.json to your project:
+
+``` bash
+npm install express body-parser cookie-parser debug jade morgan serve-favicon --save
+```
+
+Note: You can also achieve a fresh install with all package dependencies using the following commands:
+
+``` bash
+rm -rf node_modules
+npm install
+```
+
+### Entry point
+
+Our entry point is `bin/www`, which is pointed to in our `package.json` start script. We can run the app either using `node ./bin/www` or `npm start`.
 
 ## Tutorial
 
@@ -39,7 +58,7 @@ Access a demonstration of the working application at this custom [AWS link](http
 (Note: When you download a repository from Github, there will be a folder that contains the root of your project _inside the zip_. The zip file itself must contain the root, so unzip the project, select all the files and folders in root, and send it to zip.)
 
 3. Choose your zipped Node.js project and click "Upload".
-1. Click "Configure more options" and from there "Create App." (It will take a few minutes.)
+1. Click "Configure more options" and from there "Create App." (It will take a few minutes as it installs all our dependencies and gets the environment set up.)
 
 ### Opps, the app is Degraded!
 
